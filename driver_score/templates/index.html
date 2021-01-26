@@ -23,16 +23,16 @@
             </div>
             <div class="row">
                 <div class="col-md-5">
-                    <div><br></div>
+                    <div><br><br></div>
                     <div class="well">
                         <h4>Enter your Personal and Vehicle Info and Day of travel</h4>
                         <p>
                             <form method="POST" action="/" role="form" , name="petform">
                                 <!-- Age Choice -->
                                 <label for="personAge">Enter your age:</label>
-                                <input type="text" class="form-control" id="inputAge" name="selectAge" placeholder="Age" minlength=2 maxlength=3 size="10" required>
-                                <span class="validity"></span>
-                                <div><br></div>
+                                <div><input type="text" class="form-control" id="inputAge" name="selectAge" placeholder="Age" minlength=2 maxlength=3 size="10" required>
+                                    <span class="validity"></span></div>
+                                <div><br><br></div>
                                 <div>
                                     <!-- Gender Choice -->
                                     <label for="personGender">Choose your gender:</label>
@@ -48,10 +48,10 @@
                                 <div>
                                     <!-- Car Year Choice -->
                                     <label for="carYear">Enter your car model year:</label>
-                                    <input type="text" class="form-control" id="inputCarYear" name="carYear" placeholder="Year" minlength=4 maxlength=4 size="10" required>
-                                    <span class="validity"></span>
+                                    <div><input type="text" class="form-control" id="inputCarYear" name="carYear" placeholder="Year" minlength=4 maxlength=4 size="10" required>
+                                        <span class="validity"></span></div>
                                 </div>
-                                <div><br></div>
+                                <div><br><br></div>
                                 <div>
                                     <!-- Car Make Choice -->
                                     <label for="carMake">Choose your car make:</label>
@@ -165,7 +165,8 @@
                                 <!-- <div><br></div> -->
                                 <!-- Submit Button -->
                                 <div>
-                                    <input type="submit" value="submit" class="btn btn-default">
+                                    <input type="submit" value="Submit" class="btn btn-default">
+                                    <a class="btn btn-primary" id="resetButton" role="button" style="background-color: grey; border: none; color: white;">Reset</a>
                                 </div>
                             </form>
                         </p>

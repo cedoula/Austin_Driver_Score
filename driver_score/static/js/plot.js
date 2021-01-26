@@ -83,3 +83,20 @@ function repopulate(re_input) {
         document.getElementById(re_input.travelDay).checked = true;
     }
 };
+
+document.getElementById("resetButton").onclick = function() { reset() };
+
+function reset() {
+    let zero = 0;
+    create_gauge_plot(zero);
+    document.getElementById("inputAge").value = null;
+    document.getElementById("inputCarYear").value = null;
+    let genders = document.getElementsByName("personGender");
+    genders.forEach((gender) => { gender.checked = false; });
+    let makes = document.getElementsByName("carMake");
+    makes.forEach((make) => { make.checked = false; });
+    let bodies = document.getElementsByName("carBody");
+    bodies.forEach((body) => { body.checked = false; });
+    let days = document.getElementsByName("travelDay");
+    days.forEach((day) => { day.checked = false; });
+};
