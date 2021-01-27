@@ -43,20 +43,18 @@
         -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
         transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     }
-    
-    .validity {
+    /* .validity {
         float: right;
     }
     
     .form-control {
         float: left;
-    }
-    
-    input[type=submit] {
+    } */
+    /* input[type=submit] {
         background-color: #07a30c;
         border: none;
         color: white;
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
-    }
+    } */

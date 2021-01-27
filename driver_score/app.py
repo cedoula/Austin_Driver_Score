@@ -6,12 +6,12 @@ import pandas as pd
 
 app = Flask(__name__)
 # Load pipeline
-pipeline = load("static/ml/pipeline_v1.joblib")
+pipeline = load("driver_score/static/ml/pipeline_v1.joblib")
 # Load the label encoders
-le_gender = load_p(open('static/ml/le_gender.pkl', 'rb'))
-le_body = load_p(open('static/ml/le_body.pkl', 'rb'))
-le_make = load_p(open('static/ml/le_make.pkl', 'rb'))
-le_day = load_p(open('static/ml/le_day.pkl', 'rb'))
+le_gender = load_p(open('driver_score/static/ml/le_gender.pkl', 'rb'))
+le_body = load_p(open('driver_score/static/ml/le_body.pkl', 'rb'))
+le_make = load_p(open('driver_score/static/ml/le_make.pkl', 'rb'))
+le_day = load_p(open('driver_score/static/ml/le_day.pkl', 'rb'))
 
 @app.route("/", methods=["GET", "POST"])
 def home():
