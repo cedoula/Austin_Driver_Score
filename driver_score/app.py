@@ -4,14 +4,16 @@ from pickle import dump as dump_p, load as load_p
 import numpy as np
 import pandas as pd
 
-app = Flask(__name__)
+
 # Load pipeline
-pipeline = load("/app/driver_score/static/ml/pipeline_v1.joblib")
+pipeline = load("/app/driver_score/ml/pipeline_v1.joblib")
 # Load the label encoders
-le_gender = load_p(open('/app/driver_score/static/ml/le_gender.pkl', 'rb'))
-le_body = load_p(open('/app/driver_score/static/ml/le_body.pkl', 'rb'))
-le_make = load_p(open('/app/driver_score/static/ml/le_make.pkl', 'rb'))
-le_day = load_p(open('/app/driver_score/static/ml/le_day.pkl', 'rb'))
+le_gender = load_p(open('/app/driver_score/ml/le_gender.pkl', 'rb'))
+le_body = load_p(open('/app/driver_score/ml/le_body.pkl', 'rb'))
+le_make = load_p(open('/app/driver_score/ml/le_make.pkl', 'rb'))
+le_day = load_p(open('/app/driver_score/ml/le_day.pkl', 'rb'))
+
+app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def home():
