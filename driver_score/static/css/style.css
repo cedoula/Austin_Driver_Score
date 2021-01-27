@@ -51,3 +51,12 @@
     .form-control {
         float: left;
     }
+    
+    input[type=submit] {
+        background-color: #07a30c;
+        border: none;
+        color: white;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
